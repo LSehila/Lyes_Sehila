@@ -1,0 +1,207 @@
+/* Enhanced Custom CSS for Portfolio */
+
+/* Définition des variables globales */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --dark-color: #2c3e50;
+  --light-color: #f8f9fa;
+  --gray-color: #555;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Arial', sans-serif;
+}
+
+/* Styles Globaux */
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  background-color: var(--light-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  margin-bottom: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Section Hero/Header */
+header {
+  padding: 100px 0;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p.lead {
+  font-size: 1.3rem;
+}
+
+/* Espacement des sections */
+section {
+  padding: 60px 0;
+}
+
+/* Titres et Sous-titres */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--dark-color);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 10px auto 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+h4 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Texte Justifié */
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Cartes de projets */
+.card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: var(--gray-color);
+}
+
+/* Boutons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+}
+
+/* Styles pour les images */
+.img-fluid {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Compétences */
+#skills ul {
+  padding: 0;
+}
+
+#skills li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Media Queries pour une meilleure réactivité */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p.lead {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+  }
+}
